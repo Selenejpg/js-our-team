@@ -53,6 +53,9 @@ for (let i = 0; i < listaTeam.length; i++) {
                 <p class="card-text">${listaTeam[i]["Ruolo"]}</p>
             </div>
         </div>`;
+        
+        //ho usato la conoscenza proibita però funziona ABBIATE PIETA'
+        break;
 
         console.log(listaTeam[i][key]);
         //Stampare la chiave
