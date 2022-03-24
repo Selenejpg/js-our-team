@@ -1,3 +1,4 @@
+
 //Definiamo un array di oggetti che rappresentano i membri del team. Ogni membro ha le informazioni necessarie per stampare la relativa card: Nome, Ruolo e Foto.
 let listaTeam = [
     {
@@ -53,15 +54,9 @@ for (let i = 0; i < listaTeam.length; i++) {
             </div>
         </div>`;
 
-        for (let key in listaTeam[i]) {
-            document.getElementById("titolo").innerHTML += `<div>${[key][0]}</div>`;    
-        }
-
         console.log(listaTeam[i][key]);
         //Stampare la chiave
         console.log(key);
     }
     
 }
-
-//BONUS: stilizziamo la sezione realizzando le card di ciascun membro del team, come nel mockup allegato.
