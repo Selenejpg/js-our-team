@@ -1,3 +1,4 @@
+//Definiamo un array di oggetti che rappresentano i membri del team. Ogni membro ha le informazioni necessarie per stampare la relativa card: Nome, Ruolo e Foto.
 let listaTeam = [
     {
         "Nome": "Wayne Barnett",
@@ -39,9 +40,10 @@ let listaTeam = [
 
 console.log(listaTeam);
 
+//Milestone 1: stampare in console l'elenco dei membri del team, scrivendo separatamente i dettagli di ciascun componente.
 for (let i = 0; i < listaTeam.length; i++) {
     for (let key in listaTeam[i]) {
-        //stampare i valori
+        //Milestone 2: stampare i dati all'interno di un contenitore nella pagina html in modo dinamico, creando per ciascun membro del team un elemento che conterrà i suoi dati.
         document.getElementById("teamContainer").innerHTML += `
         <div class="card" style="width: 18rem;">
             <img src="./img/${listaTeam[i]["Img"]}" class="card-img-top" alt="...">
@@ -61,3 +63,5 @@ for (let i = 0; i < listaTeam.length; i++) {
     }
     
 }
+
+//BONUS: stilizziamo la sezione realizzando le card di ciascun membro del team, come nel mockup allegato.
